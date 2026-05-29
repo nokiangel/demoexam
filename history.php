@@ -24,13 +24,13 @@ if(!$query) die('query error: ' . $con->error);
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #0d47a2;
+            background-color: #2da5ebff;
             padding: 20px;
         }
         .container {
             max-width: 800px;
             margin: 0 auto;
-            background: #bac1c4ff;
+            background: #86c3d3ff;
             padding: 25px;
             border-radius: 8px;
             box-shadow: 0 0 10px rgba(0,0,0,0.1);
@@ -52,11 +52,11 @@ if(!$query) die('query error: ' . $con->error);
             background-color: #0056b3;
         }
         .request {
-            border: 1px solid #ddd;
+            border: 1px solid #924c4cff;
             margin: 15px 0;
             padding: 15px;
             border-radius: 5px;
-            background-color: #fafafa;
+            background-color: #b8b8b8ff;
         }
         .request h2 {
             margin-top: 0;

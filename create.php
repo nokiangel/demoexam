@@ -36,7 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Создание заявки - Водить.РФ</title>
+    <title>Создание заявки - Учусь.РФ</title>
     <style>
         * {
             margin: 0;
@@ -46,7 +46,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #007bff 0%, #0d47a1 100%);
+            background: linear-gradient(135deg, #35bee0ff 0%, #0d47a1 100%);
             min-height: 100vh;
             padding: 40px 20px;
         }
@@ -84,7 +84,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
         .btn-nav {
             display: inline-block;
             padding: 12px 24px;
-            background: linear-gradient(135deg, #007bff 0%, #0d47a1 100%);
+            background: linear-gradient(135deg, #007bff 0%, #4280dfff 100%);
             color: white;
             text-decoration: none;
             border-radius: 50px;

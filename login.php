@@ -74,7 +74,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         body {
             font-family: 'Arial', sans-serif;
-            background: linear-gradient(135deg, #007bff 0%, #0d47a1 100%);
+            background: linear-gradient(135deg, #04a7e7ff 0%, #588dddff 100%);
             min-height: 100vh;
             display: flex;
             justify-content: center;

@@ -77,8 +77,8 @@ $stats = $stats_query->fetch_assoc();
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
     <style>
         :root {
-            --primary: #007bff;
-            --primary-dark: #0d47a1;
+            --primary: #4c92ddff;
+            --primary-dark: #0d9ca1ff;
             --success: #28a745;
             --warning: #ffc107;
             --info: #17a2b8;

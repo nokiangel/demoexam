@@ -20,8 +20,8 @@ $is_admin = isset($_SESSION['admin']) && $_SESSION['admin'];
   <style>
     /* Основные цвета: синий и серебристый (как на странице регистрации) */
     :root {
-      --blue-dark: #007bff;
-      --blue-medium: #0d47a1;
+      --blue-dark: #319fdfff;
+      --blue-medium: #4b88e4ff;
       --blue-light: #4a7bcb;
       --silver: #c0c0c0;
       --silver-light: #e0e0e0;
@@ -39,7 +39,7 @@ $is_admin = isset($_SESSION['admin']) && $_SESSION['admin'];
 
     /* Шапка сайта */
     .header {
-      background: rgba(26, 58, 95, 0.95);
+      background: rgba(28, 86, 124, 0.95);
       padding: 15px 0;
       box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
       position: sticky;
@@ -157,7 +157,13 @@ $is_admin = isset($_SESSION['admin']) && $_SESSION['admin'];
       color: var(--blue-dark);
       transform: translateY(-50%) scale(1.1);
     }
-
+    .footer {
+            text-align: center;
+            padding: 20px;
+            
+            font-size: 18px;
+            color: #cfd0d1ff;
+        }
     /* Точки навигации */
     .dot-container {
       text-align: center;
@@ -228,7 +234,32 @@ $is_admin = isset($_SESSION['admin']) && $_SESSION['admin'];
 </header>
 
 
+<!-- Слайдер с картинками -->
+<div class="slideshow-container">
+  <!-- Слайды -->
+  <div class="mySlides fade">
+    <img src="images/slide1.jpg" alt="Слайд 1">
+    <div class="text">Курсы повышения квалификации</div>
+  </div>
 
+  <div class="mySlides fade">
+    <img src="images/slide2.jpg" alt="Слайд 2">
+    <div class="text">Курсы переподготовки</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/slide3.jpg" alt="Слайд 3">
+    <div class="text">Приглашаем на курсы повышения квалификации</div>
+  </div>
+
+  <div class="mySlides fade">
+    <img src="images/slide4.png" alt="Слайд 4">
+    <div class="text">Курсы по охране труда</div>
+  </div>
+
+  <a class="prev" onclick="plusSlides(-1)">❮</a>
+  <a class="next" onclick="plusSlides(1)">❯</a>
+</div>
 
 <!-- Точки навигации -->
 <div class="dot-container">
@@ -243,21 +274,24 @@ $is_admin = isset($_SESSION['admin']) && $_SESSION['admin'];
   <h2 style="text-align: center; color: var(--silver); margin-bottom: 30px;">Почему выбирают нас?</h2>
   
   <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px;">
-    <div style="background: rgba(26, 58, 95, 0.8); padding: 25px; border-radius: 10px; text-align: center;">
+    <div style="background: rgba(13, 104, 207, 0.8); padding: 25px; border-radius: 10px; text-align: center;">
       <h3 style="color: var(--silver-light);">Опытные преподаватели</h3>
       <p style="color: var(--silver); line-height: 1.5;">Все наши преподаватели имеют высшую категорию.</p>
     </div>
     
-    <div style="background: rgba(26, 58, 95, 0.8); padding: 25px; border-radius: 10px; text-align: center;">
+    <div style="background: rgba(13, 104, 207, 0.8); padding: 25px; border-radius: 10px; text-align: center;">
       <h3 style="color: var(--silver-light);">Современное оборудование</h3>
       <p style="color: var(--silver); line-height: 1.5;">Мы используем только новые программы для обучения.</p>
     </div>
     
-    <div style="background: rgba(26, 58, 95, 0.8); padding: 25px; border-radius: 10px; text-align: center;">
+    <div style="background: rgba(13, 104, 207, 0.8); padding: 25px; border-radius: 10px; text-align: center;">
       <h3 style="color: var(--silver-light);">Гибкий график</h3>
       <p style="color: var(--silver); line-height: 1.5;">Подберём удобное время для занятий под ваш график.</p>
     </div>
   </div>
+  <div class="footer">
+    <p>© 2026 Учусь.РФ</p>
+</div>
 </section>
 
 <script>
@@ -310,6 +344,7 @@ if (slideshowContainer) {
     }, 3000);
   });
 }
+
 </script>
 </body>
 </html>
